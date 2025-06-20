@@ -6,17 +6,39 @@ This project implements a referral-based profit-sharing system where users can r
 
 ## 🖥️ Feature Walkthrough
 
-### 🔹 User Sign-Up
-Users enter their name and (optional) referral UUID.
-
-![Signup Page](./screenshots/signup.png)
+![Image](./assets/1.png)
 
 ---
 
-### 🔹 Make a Purchase
-User logs in with UUID and enters purchase amount.
+![Image](./assets/2.png)
 
-![Login Page](./screenshots/login.png)
+---
+
+![Image](./assets/3.png)
+
+---
+
+![Image](./assets/4.png)
+
+---
+
+![Image](./assets/5.png)
+
+---
+
+![Image](./assets/6.png)
+
+---
+
+![Image](./assets/7.png)
+
+---
+
+![Image](./assets/8.png)
+
+---
+
+![Image](./assets/9.png)
 
 ---
 
