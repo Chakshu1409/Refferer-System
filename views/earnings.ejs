@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Earnings</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h2>Earnings for UUID: <%= uuid %></h2>
+
+  <h3>Summary</h3>
+  <ul id="summary">
+    <% breakdown.forEach(row => { %>
+      <li>Level <%= row.level %>: ₹<%= row.total %></li>
+    <% }) %>
+  </ul>
+
+  <h3>Live Updates</h3>
+  <div id="live-updates"></div>
+
+  <h3>Transaction History</h3>
+  <table border="1">
+    <tr>
+      <th>From User</th>
+      <th>Level</th>
+      <th>Amount</th>
+      <th>Timestamp</th>
+    </tr>
+    <% history.forEach(row => { %>
+      <tr>
+        <td><%= row.from_user_id %></td>
+        <td><%= row.level %></td>
+        <td>₹<%= row.amount %></td>
+        <td><%= row.created_at.toLocaleString() %></td>
+      </tr>
+    <% }) %>
+  </table>
+
+  <script>
+    const socket = io();
+    socket.emit('register', '<%= uuid %>');
+
+    socket.on('earningsUpdate', (data) => {
+      const updates = document.getElementById('live-updates');
+      const msg = `You earned ₹${data.amount} from user ${data.from} (Level ${data.level})`;
+      const p = document.createElement('p');
+      p.innerText = msg;
+      updates.prepend(p);
+    });
+  </script>
+</body>
+</html>
