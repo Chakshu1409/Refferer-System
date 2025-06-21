@@ -1,6 +1,6 @@
 # 🔗 Multi-Level Referral and Earning System with Live Data Updates
 
-LINK TO DETAILED DOCUMENT: [LINK](https://drive.google.com/file/d/1fDoCE9yDn6pfnJsPzdQThAzz9uSwp1oF/view?usp=drive_link)
+LINK TO DETAILED DOCUMENT: [LINK](https://docs.google.com/document/d/1iKi9d8g4czgE_SUcy65s6GUPVMN5NhkEzfMuXN1sbmg/edit?usp=sharing)
 
 ---
 
