@@ -37,9 +37,6 @@ server.listen(process.env.PORT, () => {
 });
 
 
-
-
-
 app.get('/signup', (req, res) => {
   res.render('signup');
 });
@@ -72,12 +69,6 @@ app.post('/signup', async (req, res) => {
     res.status(500).send('Internal Server Error during signup');
   }
 });
-
-
-
-
-
-
 
 app.get('/login', (req, res) => {
   res.render('login');
@@ -148,12 +139,6 @@ app.post('/login', async (req, res) => {
   }
 });
 
-
-
-
-
-
-
 app.get('/earnings/:uuid', async (req, res) => {
   const { uuid } = req.params;
 
@@ -187,18 +172,6 @@ app.get('/earnings/:uuid', async (req, res) => {
     res.status(500).send('Failed to load earnings');
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 io.on('connection', (socket) => {
   console.log('Socket connected:', socket.id);

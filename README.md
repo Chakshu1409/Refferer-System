@@ -1,6 +1,6 @@
 # 🔗 Multi-Level Referral and Earning System with Live Data Updates
 
-This project implements a referral-based profit-sharing system where users can refer others and earn commissions from their direct and indirect referrals. It uses Node.js, Express, PostgreSQL, EJS for templating, and WebSockets for real-time updates. The system is fully containerized with Docker for consistent local deployment.
+LINK TO DETAILED DOCUMENT: [LINK](https://drive.google.com/file/d/1fDoCE9yDn6pfnJsPzdQThAzz9uSwp1oF/view?usp=drive_link)
 
 ---
 
@@ -42,7 +42,7 @@ This project implements a referral-based profit-sharing system where users can r
 
 ---
 
-### 🔹 Real-Time Earnings Update
+<!-- ### 🔹 Real-Time Earnings Update
 Parent and grandparent see updates immediately without refreshing.
 
 ![Earnings Live Update](./screenshots/earnings-live-update.png)
@@ -143,4 +143,4 @@ Parent and grandparent see updates immediately without refreshing.
 
 3. **Start the System**
     docker-compose up --build
-
+ -->
